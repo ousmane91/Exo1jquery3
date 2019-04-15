@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Exo1jquery3</title>
+</head>
+<body>
+  <form>
+  <p> Nombre de clic:<input type="text" name="numBer" id="test" value="" /> </p>
+<button type="button" name="button" id="btn1">Click</button>
+</form>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript">
+  //fonction pour afficher le nombre de clic
+  var count = 0;
+  $('#btn1').click(function(){
+  count++;
+  $('#test').val(count);
+  });
+</script>
+</body>
+</html>
